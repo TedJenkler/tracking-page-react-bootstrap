@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tracking-page-react-bootstrap-route/static/css/main.b1e6a81f.css",
+    "main.js": "/tracking-page-react-bootstrap-route/static/js/main.f37eefa0.js",
+    "static/js/787.74e1e82a.chunk.js": "/tracking-page-react-bootstrap-route/static/js/787.74e1e82a.chunk.js",
+    "static/media/illustration-devices.svg": "/tracking-page-react-bootstrap-route/static/media/illustration-devices.30f970328fa2963777660c23d307ba6d.svg",
+    "index.html": "/tracking-page-react-bootstrap-route/index.html",
+    "static/media/logo.svg": "/tracking-page-react-bootstrap-route/static/media/logo.52a9134aef772ac89fd511696d08fec9.svg",
+    "static/media/icon-hamburger.svg": "/tracking-page-react-bootstrap-route/static/media/icon-hamburger.d2a3eed8f465f3e82f1608cba70330ce.svg",
+    "main.b1e6a81f.css.map": "/tracking-page-react-bootstrap-route/static/css/main.b1e6a81f.css.map",
+    "main.f37eefa0.js.map": "/tracking-page-react-bootstrap-route/static/js/main.f37eefa0.js.map",
+    "787.74e1e82a.chunk.js.map": "/tracking-page-react-bootstrap-route/static/js/787.74e1e82a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1e6a81f.css",
+    "static/js/main.f37eefa0.js"
+  ]
+}
