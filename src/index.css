@@ -14,6 +14,11 @@ body {
   overflow-x: hidden;
 }
 
+.displayer {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-nav {
   height: 20%;
   width: 100%;
@@ -28,9 +33,9 @@ body {
   width: 50%;
 }
 
-.nav-part {
+.nav-desktop {
   display: flex;
-  width: 40rem;
+  width: 30rem;
   background-color: transparent;
   z-index: 2;
 }
@@ -144,8 +149,13 @@ body {
   left: 45em;
   bottom: 62em;
   z-index: 3;
+  width: 50%;
 }
 
+.burgermenu-button {
+  visibility: hidden;
+  position: absolute;
+}
 @media (max-width: 1400px){
  
 .header-part {
@@ -209,3 +219,277 @@ body {
 
 }
 
+@media (max-width: 800px){
+
+body {
+  overflow: hidden;
+}
+
+.header-nav {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+#img {
+  width: 100%;
+}
+
+.header-part {
+  margin-top: 2.5em;
+  margin-left: 4em;
+}
+
+.nav-desktop {
+  visibility: hidden;
+  position: absolute;
+}
+
+.displayer {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 4em;
+}
+
+.nav-mobile {
+  visibility: visible;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#logo {
+  width: 2em;
+  height: 2em;
+}
+
+.burgermenu-button {
+  visibility: visible;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-right: 4em;
+  z-index: 4;
+  position: relative;
+  width: 10em;
+  background-color: transparent;
+  border: none;
+}
+
+.info-part {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.info {
+  position: relative;
+  bottom: 40em;
+}
+
+.new-text {
+  padding: 0.5;
+  font-size: 1em;
+  margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-mobile-hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12em;
+  width: 80vh;
+  position: absolute;
+  top: 10em;
+  right: 5em;
+  background-color: white;
+  z-index: 5;
+}
+
+.nav-item-mobile {
+  list-style: none;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+.nav-item-mobile > a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-login-divider{
+  width: 80%;
+  height: 1em;
+  border-bottom: 1px solid black;
+}
+
+.h2-text {
+  font-size: 1em;
+  padding: 0.5;
+  font-weight: 400;
+  color: hsl(231, 7%, 65%);
+}
+
+.h1-text {
+  font-size: 1.5em;
+  padding-right: 1em;
+  margin: 0;
+}
+
+.p-text {
+  font-size: 1em;
+  font-weight: 400;
+  margin-right: 6em;
+}
+
+.button-part {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.demo {
+  font-size: 0.75em;
+  margin-right: 1em;
+  height: 2em;
+  width: 15em;
+  padding: 0em;
+}
+
+.button-p {
+  font-size: 0.75em;
+  color: hsl(231, 7%, 65%);
+}
+
+.designelement {
+  width: 40rem;
+  height: 38em;
+  position: relative;
+  left: 25.5em;
+  bottom: 32.5em;
+  border-radius: 0 0 0 4em;
+  z-index: 1;
+}
+
+#img {
+  position: relative;
+  left: 12em;
+  bottom: 0;
+}
+
+}
+
+@media (max-width: 800px){
+
+  .header-part {
+    margin-left: 1em;
+  }
+  
+  .burgermenu-button {
+    margin-bottom: 1em;
+    margin-right: 1em;
+   
+  }
+  
+  .info-part {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .info {
+    position: relative;
+    bottom: 40em;
+  }
+  
+  .new-text {
+    padding: 0.5;
+    font-size: 1em;
+    margin-right: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-mobile-hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12em;
+    width: 15em;
+    position: absolute;
+    top: 4em;
+    right: 2em;
+    background-color: white;
+    z-index: 5;
+  }
+  
+  .nav-item-mobile {
+    list-style: none;
+    margin-top: 1em;
+    font-weight: 700;
+  }
+  
+  .nav-item-mobile > a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .mobile-login-divider{
+    width: 80%;
+    height: 1em;
+    border-bottom: 1px solid black;
+  }
+  
+  .h2-text {
+    font-size: 0.5em;
+    padding: 2em 0 0 0 ;
+  }
+
+  .h1-text {
+    font-size: 0.75em;
+    padding-right: 0;
+    margin: 0;
+  }
+  
+  .p-text {
+    font-size: 0.5em;
+    margin-right: 3em;
+  }
+  
+  .button-part {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+  }
+  
+  .demo {
+    font-size: 0.25em;
+    margin-right: 1em;
+    height: 2em;
+    width: 15em;
+    padding: 0em;
+  }
+  
+  .button-p {
+    font-size: 0.25em;
+    color: hsl(231, 7%, 65%);
+  }
+  
+  .designelement {
+    width: 40rem;
+    height: 38em;
+    position: relative;
+    left: 6em;
+    bottom: 40em;
+    border-radius: 0 0 0 4em;
+    z-index: 1;
+  }
+  
+  #img {
+    position: relative;
+    left: 2em;
+    bottom: 3em;
+    width: 20em;
+    height: 100%;
+  }
+  
+  }
