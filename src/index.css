@@ -4,11 +4,14 @@ body {
   width: 100%;
   font-weight: 400;
   font-size: 18px;
+  margin: 0;
 }
 
 .container {
   height: 100vh;
   min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header-nav {
@@ -17,12 +20,19 @@ body {
   display: flex;
 }
 
-.header {
+.header-part {
   display: flex;
   justify-content: flex-start;
   margin-top: 5em;
-  margin-left: 10em;
-  width: 100%;
+  margin-left: 8em;
+  width: 50%;
+}
+
+.nav-part {
+  display: flex;
+  width: 40rem;
+  background-color: transparent;
+  z-index: 2;
 }
 
 #logo {
@@ -33,4 +43,169 @@ body {
 .nav {
   display: flex;
   width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item-left {
+  margin-right: 5em;
+}
+
+#special-link > a {
+  color: hsl(231, 7%, 65%);
+}
+
+.info-part {
+  width: 50%;
+  margin-top: 2em;
+  margin-left: 8em;
+}
+
+.info {
+
+}
+
+.h2-part {
+  display: flex;
+}
+
+.new-text {
+  background-color: black;
+  border-radius: 2em;
+  color: white;
+  padding: 0.4em;
+  font-size: 1.5em;
+}
+
+.h2-text {
+  font-size: 1.5em;
+  padding: 0.4em;
+  font-weight: 400;
+  color: hsl(231, 7%, 65%);
+}
+
+.h1-text {
+  font-size: 3em;
+  font-weight: 700;
+  padding-right: 2em;
+  margin: 0;
+}
+
+.p-text {
+  color: hsl(231, 7%, 65%);
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-right: 12em;
+}
+
+.button-part {
+  display: flex;
+  margin-top: 4em;
+}
+
+.demo {
+  border-radius: 0.5em;
+  border: none;
+  background-color: hsl(0, 100%, 68%);
+  color: white;
+  font-size: 1em;
+  padding: 1em 2em 1em 2em;
+  margin-right: 1em;
+  font-weight: 700;
+}
+
+.button-p {
+  font-size: 1.2em;
+  color: hsl(231, 7%, 65%);
+}
+
+.designelement {
+  width: 40rem;
+  height: 38em;
+  background-color: hsl(207, 33%, 95%);
+  position: relative;
+  left: 45em;
+  bottom: 50em;
+  border-radius: 0 0 0 4em;
+  z-index: 1;
+}
+
+#img {
+  position: relative;
+  left: 45em;
+  bottom: 62em;
+  z-index: 3;
+}
+
+@media (max-width: 1400px){
+ 
+.header-part {
+  margin-left: 6em;
+}
+
+.nav-part {
+  padding-left: 3em ;
+}
+
+.info-part {
+  width: 50%;
+  margin-top: 2em;
+  margin-left: 6em;
+}
+}
+
+@media (max-width: 1100px){
+
+.header-part {
+  margin-top: 5em;
+  margin-left: 2em;
+}
+
+.nav-item-left {
+  margin-right: 2em;
+}
+
+.info-part {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.h1-text {
+  font-size: 2.5em;
+  padding-right: 0em;
+}
+
+.p-text {
+  font-size: 1em;
+  margin-right: 14em;
+}
+
+.designelement {
+  width: 200rem;
+  height: 38em;
+  background-color: hsl(207, 33%, 95%);
+  position: relative;
+  left: 30em;
+  bottom: 50em;
+  border-radius: 0 0 0 4em;
+  z-index: 1;
+}
+
+#img {
+  position: relative;
+  left: 30em;
+  bottom: 62em;
+  z-index: 3;
+}
+
+}
+

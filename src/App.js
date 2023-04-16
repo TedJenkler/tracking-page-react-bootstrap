@@ -5,16 +5,20 @@ import Products from "./Compnents/Products";
 import Features from "./Compnents/Features";
 import Pricing from "./Compnents/Pricing";
 import Login from "./Compnents/Login";
+import Item from "./Compnents/Item";
+import DesignElement from "./Compnents/DesignElement";
+import Img from "./images/illustration-devices.svg"
 
 
 function App() {
+
   return (
     <div className='container'>
       <div className="row header-nav">
-        <div className="col-6 header">
+        <div className="col-6 header-part">
           <img id="logo" src={logo} alt="logo" />
         </div>
-        <div className="col-6 nav">
+        <div className="col-6 nav-part">
         
           <Nav />
         
@@ -26,6 +30,9 @@ function App() {
         </Routes>
         </div>
       </div>
+      <Item />
+      <DesignElement />
+      <img id="img" src={Img} alt="img" />
     </div>
   );
 }
